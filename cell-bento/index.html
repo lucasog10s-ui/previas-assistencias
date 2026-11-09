@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cell Bento · Celulares no São Bento</title>
+<meta name="description" content="Cell Bento: Celulares no São Bento. Av. Cônsul Antônio Cadar, 126 · Lj 29 · São Bento, Belo Horizonte. Nota 4,5 no Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B1220;--sf:#151E30;--ink:#EAF1FF;--mu:#9AA9C7;--ac:#38BDF8;--ac2:#7DD3FC;--on:#04131A;--ln:#243049}
+*{box-sizing:border-box}html,body{margin:0;overflow-x:hidden}html{scroll-behavior:smooth}
+body{font-family:'Space Grotesk',system-ui,sans-serif;background:var(--bg);color:var(--ink);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}.wrap{max-width:1080px;margin:0 auto;padding-left:20px;padding-right:20px}
+h1,h2,h3{margin:0 0 10px;line-height:1.15;letter-spacing:-.01em}h1,h2{font-family:'Space Grotesk','Space Grotesk',serif}
+h1{font-size:clamp(36px,9vw,64px);font-weight:700}h2{font-size:clamp(27px,6vw,40px);font-weight:700}h3{font-size:18px;font-weight:700}
+p{margin:0 0 10px}.mu{color:var(--mu)}
+.demo{background:var(--ink);color:var(--bg);font-size:13px;text-align:center;padding:7px 14px;line-height:1.4}
+.demo a{font-weight:700;color:inherit}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--ln)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:60px;gap:10px}
+.brand{font-weight:700;font-size:19px;text-decoration:none;display:flex;align-items:center;gap:9px;white-space:nowrap;font-family:'Space Grotesk','Space Grotesk'}
+.brand i{width:12px;height:12px;border-radius:4px;background:var(--ac);display:inline-block}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:14px;padding:15px 22px;font-weight:700;font-size:17px;text-decoration:none;border:0;text-align:center}
+.btn svg{width:21px;height:21px;flex:0 0 21px}
+.btn.pri{background:var(--ac);color:var(--on);box-shadow:0 10px 24px color-mix(in srgb,var(--ac) 35%,transparent)}
+.btn.ghost{background:transparent;border:1.5px solid var(--ln);color:var(--ink)}
+.btn.sm{padding:9px 14px;font-size:15px;box-shadow:none}
+.hero{padding:40px 0 34px;position:relative}
+.hero::before{content:"";position:absolute;inset:-60px -40% auto auto;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--ac) 22%,transparent),transparent 70%);z-index:-1}
+@media(min-width:900px){.hero{padding:80px 0 60px}.hero .in{max-width:720px}}
+.rate{display:inline-flex;align-items:center;gap:10px;background:var(--sf);border:1px solid var(--ln);border-radius:999px;padding:7px 14px 7px 8px;font-size:14.5px;margin-bottom:16px;white-space:nowrap;max-width:100%}
+@media(max-width:430px){.stars{display:none}}
+.rate b{background:var(--ac2);color:#1a1300;border-radius:999px;padding:2px 10px;font-size:15px}
+.stars{color:#F5B301;letter-spacing:1px}
+.chip{display:inline-block;font-size:13px;font-weight:700;border:1px solid var(--ac);color:var(--ac);border-radius:999px;padding:3px 11px;margin:0 0 16px 6px;vertical-align:top}
+.sub{font-size:19px;color:var(--mu);max-width:560px}
+.ctas{display:flex;flex-direction:column;gap:12px;margin-top:22px}@media(min-width:560px){.ctas{flex-direction:row;flex-wrap:wrap}}
+.addr{margin-top:16px;font-size:15px;color:var(--mu)}
+section{padding:44px 0}.alt{background:var(--sf);border-top:1px solid var(--ln);border-bottom:1px solid var(--ln)}
+.kick{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ac);margin-bottom:6px;display:block}
+.grid{display:grid;gap:14px;margin-top:20px}@media(min-width:620px){.g2,.g3{grid-template-columns:1fr 1fr}}@media(min-width:900px){.g3{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--sf);border:1px solid var(--ln);border-radius:18px;padding:20px}.alt .card{background:var(--bg)}
+.card p{color:var(--mu);margin:0;font-size:15.5px}
+.svc{display:flex;gap:14px;align-items:flex-start}.svc .e{flex:0 0 44px;height:44px;border-radius:12px;display:grid;place-items:center;font-size:22px;background:color-mix(in srgb,var(--ac) 14%,transparent)}
+.svc h3{margin-bottom:2px}
+.note{margin-top:16px;font-size:15px;color:var(--mu)}
+.big{font-size:34px;font-weight:700;color:var(--ac);line-height:1;margin-bottom:8px;font-family:'Space Grotesk','Space Grotesk'}
+.steps{counter-reset:s}.steps .card{position:relative;padding-top:52px}.steps .card::before{counter-increment:s;content:counter(s);position:absolute;top:16px;left:20px;width:28px;height:28px;border-radius:9px;background:var(--ac);color:var(--on);font-weight:700;display:grid;place-items:center;font-size:15px}
+.map{border-radius:18px;overflow:hidden;border:1px solid var(--ln);aspect-ratio:4/3;background:var(--sf)}@media(min-width:900px){.map{aspect-ratio:auto;min-height:340px}}
+.map iframe{width:100%;height:100%;border:0;display:block;min-height:280px}
+.info{display:grid;gap:12px}.info .card b{display:block;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--mu);margin-bottom:2px}
+.info .card a{font-weight:700;color:var(--ac)}
+.loc{display:grid;gap:16px;margin-top:20px}@media(min-width:900px){.loc{grid-template-columns:1.3fr 1fr}}
+footer{padding:26px 0 96px;font-size:14px;color:var(--mu);border-top:1px solid var(--ln)}footer .wrap{display:flex;flex-direction:column;gap:6px}
+footer a{color:inherit}
+.float{position:fixed;right:16px;bottom:16px;width:58px;height:58px;border-radius:50%;background:var(--ac);color:var(--on);display:grid;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.28);z-index:30}
+.float svg{width:28px;height:28px}@media(min-width:900px){.float{display:none}footer{padding-bottom:30px}}
+</style>
+<style>
+  .skip{position:absolute;top:-96px;left:16px;z-index:100;background:var(--sf);padding:8px 12px}.skip:focus{top:8px}
+  .hero::before{display:none}h1,h2,h3{text-wrap:balance}p{text-wrap:pretty}h1,.sub{max-width:680px}
+  .brand{white-space:normal;overflow-wrap:anywhere;font-size:18px;min-width:0}.brand i{flex-shrink:0}
+  header .wrap{height:auto;min-height:64px;padding-top:8px;padding-bottom:8px}header .btn{flex-shrink:0}
+  .btn{padding:8px 12px;font-size:16px;border-radius:12px;transition:opacity 300ms cubic-bezier(.22,1,.36,1),transform 300ms cubic-bezier(.22,1,.36,1)}
+  .btn:hover,.float:hover{opacity:.88}.btn:active,.float:active{transform:scale(.98)}a:focus-visible{outline:3px solid var(--ac);outline-offset:4px}
+  body{font-size:16px;line-height:1.5}h1{font-size:60px;line-height:1;max-width:680px}h2{font-size:36px;line-height:40px}h3{font-size:18px;line-height:28px}
+  .wrap{padding-left:24px;padding-right:24px}.card{padding:24px;border-radius:16px}.grid{gap:16px}.sub{font-size:18px;line-height:28px}.hero{padding:48px 0}
+  .reveal-line{font-size:36px;line-height:40px;max-width:680px;font-weight:600}.reveal-line span{opacity:1}
+  .faq details{padding:16px;background:var(--sf);border:1px solid var(--ln);border-radius:12px;margin:8px 0}.faq summary{font-weight:600;cursor:pointer}.faq p{margin-top:8px;color:var(--mu)}
+  @media(max-width:600px){h1{font-size:36px;line-height:40px}.brand{font-size:14px}header .btn.sm{font-size:12px;padding:8px}.hero{padding:32px 0}.rate{font-size:12px;gap:8px}.reveal-line{font-size:30px;line-height:36px}}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+  </style></head>
+<body><a class="skip" href="#inicio">Pular para o conteúdo</a>
+<div class="demo">Prévia de demonstração feita por Lucas Emmanuel · fale comigo: <a href="https://wa.me/5531995246186?text=Oi%20Lucas%21%20Vi%20a%20pr%C3%A9via%20do%20site%20que%20voc%C3%AA%20fez%20pra%20minha%20loja." target="_blank" rel="noopener">wa.me/5531995246186</a></div>
+<header><div class="wrap"><a class="brand" href="#inicio"><i></i>Cell Bento</a><a class="btn pri sm" href="https://wa.me/5531997908430?text=Ol%C3%A1%21%20Quero%20consultar%20atendimento%2C%20disponibilidade%20e%20or%C3%A7amento." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm4.52 11.99c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg>WhatsApp</a></div></header>
+<main id="inicio">
+<div class="wrap"><section class="hero"><div class="in">
+ <div class="rate"><b>★ 4,5</b><span class="stars">★★★★★</span><span>52 avaliações no Google</span></div>
+ <h1>Celulares no São Bento.</h1>
+ <p class="sub">Fale com a loja sobre o que você precisa. Informe o modelo, consulte a disponibilidade e peça um orçamento antes de decidir.</p>
+ <div class="ctas"><a class="btn pri" href="https://wa.me/5531997908430?text=Ol%C3%A1%21%20Quero%20consultar%20atendimento%2C%20disponibilidade%20e%20or%C3%A7amento." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm4.52 11.99c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg>Pedir orçamento no WhatsApp</a><a class="btn ghost" href="tel:+5531997908430"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8Z"/></svg>Ligar: (31) 99790-8430</a></div>
+ <p class="addr">📍 Av. Cônsul Antônio Cadar, 126 · Lj 29 · São Bento, Belo Horizonte</p>
+</div></section></div>
+
+<section><div class="wrap"><p class="reveal-line">Primeiro, tire suas dúvidas.<br>Depois, escolha com clareza.</p></div></section><section class="alt" id="servicos"><div class="wrap">
+ <span class="kick">Atendimento</span><h2>Como a loja ajuda</h2>
+ <div class="grid g2"><div class="card svc"><div class="e">🛠️</div><div><h3>Consulte a loja</h3><p>Conte o que procura e informe o modelo. Confirme opções, compatibilidade e disponibilidade diretamente com a equipe.</p></div></div><div class="card svc"><div class="e">📍</div><div><h3>Atendimento na loja</h3><p>Av. Cônsul Antônio Cadar, 126 · Lj 29 · São Bento, Belo Horizonte.</p></div></div>
+ </div>
+ <p class="note">Pedir orçamento no WhatsApp: informe o modelo e o que você precisa. Confirme os itens e serviços disponíveis.</p>
+</div></section>
+
+<section><div class="wrap">
+ <span class="kick">Por que confiar</span><h2>Quem já foi, aprova</h2>
+ <div class="grid g3">
+  <div class="card"><div class="big">4,5 ★</div><h3>Nota no Google</h3><p>Média de 52 avaliações de clientes no Google.</p></div>
+  <div class="card"><div class="big">📍</div><h3>Loja física em BH</h3><p>Av. Cônsul Antônio Cadar, 126 · Lj 29 · São Bento. Confirme o atendimento antes da visita.</p></div>
+  <div class="card"><div class="big">💬</div><h3>Orçamento antes de tudo</h3><p>Peça o orçamento e tire as dúvidas antes de autorizar um serviço ou escolher um produto.</p></div>
+ </div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+ <span class="kick">Como funciona</span><h2>Simples assim</h2>
+ <div class="grid g3 steps">
+  <div class="card"><h3>Fala com a gente</h3><p>Chama no WhatsApp e conte o modelo e o que você procura.</p></div>
+  <div class="card"><h3>Recebe o orçamento</h3><p>Confirme com a loja as opções, o valor e a disponibilidade. Você decide como seguir.</p></div>
+  <div class="card"><h3>Combine o próximo passo</h3><p>Confirme o atendimento, o prazo e a retirada diretamente com a loja.</p></div>
+ </div>
+</div></section>
+
+<section id="contato"><div class="wrap">
+ <span class="kick">Onde estamos</span><h2>Visite a loja</h2>
+ <div class="loc">
+  <div class="map"><iframe title="Mapa: Cell Bento" src="https://www.google.com/maps?q=Av.%20C%C3%B4nsul%20Ant%C3%B4nio%20Cadar%2C%20126%20-%20Lj%2029%20%C2%B7%20S%C3%A3o%20Bento%2C%20Belo%20Horizonte%2C%20MG%2C%2030360-000&output=embed" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  <div class="info">
+   <div class="card"><b>Endereço</b>Av. Cônsul Antônio Cadar, 126 - Lj 29 · São Bento, Belo Horizonte, MG, 30360-000<br><a href="https://www.google.com/maps/place/Cell%20Bento/data=!4m2!3m1!1s0xa6978f0c95551b:0x30ee0f758bce6aeb" target="_blank" rel="noopener">Abrir no Google Maps ↗</a></div>
+   
+   <div class="card"><b>Contato</b><a href="tel:+5531997908430">(31) 99790-8430</a> · <a href="https://wa.me/5531997908430?text=Ol%C3%A1%21%20Quero%20consultar%20atendimento%2C%20disponibilidade%20e%20or%C3%A7amento." target="_blank" rel="noopener">WhatsApp</a></div>
+   <a class="btn pri" href="https://wa.me/5531997908430?text=Ol%C3%A1%21%20Quero%20consultar%20atendimento%2C%20disponibilidade%20e%20or%C3%A7amento." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm4.52 11.99c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg>Chamar no WhatsApp</a>
+  </div>
+ </div>
+</div></section>
+<section class="faq"><div class="wrap"><span class="kick">Antes de decidir</span><h2>Tire suas dúvidas com a loja</h2>
+  <details><summary>Como pedir um orçamento?</summary><p>Envie uma mensagem com o que você precisa e informe o modelo do aparelho, quando aplicável.</p></details>
+  <details><summary>Há disponibilidade para o meu modelo?</summary><p>Consulte a loja. Produtos, peças, compatibilidade e serviços dependem de confirmação.</p></details>
+  <details><summary>Qual é o valor?</summary><p>Peça um orçamento diretamente à equipe antes de autorizar um serviço ou escolher um produto.</p></details>
+  <details><summary>Qual é o prazo de atendimento?</summary><p>Combine o prazo com a loja conforme a sua necessidade e a disponibilidade informada.</p></details>
+  <details><summary>Posso ir direto ao endereço?</summary><p>O endereço está nesta página. Confirme o horário e o atendimento por telefone ou WhatsApp antes de sair.</p></details>
+  <details><summary>Esta página é o site oficial?</summary><p>Não. Esta é uma prévia de demonstração criada por Lucas Emmanuel. Os contatos indicados são da loja.</p></details>
+  </div></section></main>
+<footer><div class="wrap">
+ <span><b>Cell Bento</b> · Av. Cônsul Antônio Cadar, 126 · Lj 29 · São Bento, Belo Horizonte (MG) · (31) 99790-8430</span>
+ <span>Prévia de demonstração feita por Lucas Emmanuel. Fale comigo: <a href="https://wa.me/5531995246186?text=Oi%20Lucas%21%20Vi%20a%20pr%C3%A9via%20do%20site%20que%20voc%C3%AA%20fez%20pra%20minha%20loja." target="_blank" rel="noopener">wa.me/5531995246186</a></span>
+</div></footer>
+<a class="float" href="https://wa.me/5531997908430?text=Ol%C3%A1%21%20Quero%20consultar%20atendimento%2C%20disponibilidade%20e%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Chamar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm4.52 11.99c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg></a>
+</body>
+</html>
