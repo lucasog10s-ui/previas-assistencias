@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Pet Feliz · Banho e tosa em domicílio · Prévia de demonstração</title>
+<meta name="description" content="Modelo de demonstração de site para banho e tosa em domicílio: o pet shop vai até você. Agende serviços pelo WhatsApp.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%235FA894'/%3E%3Cpath d='M10 14c0-1.5 1-2.5 2.2-2.5S14.4 12.5 14.4 14 13.4 16.5 12.2 16.5 10 15.5 10 14zm7.6 0c0-1.5 1-2.5 2.2-2.5S22 12.5 22 14s-1 2.5-2.2 2.5S17.6 15.5 17.6 14zM12.5 18.5c0 2.2 1.6 4 3.5 4s3.5-1.8 3.5-4c0-1.2-.8-1.8-1.6-1.8h-3.8c-.8 0-1.6.6-1.6 1.8z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FBF7F2;
+  --cream2:#F3EEE6;
+  --mint:#5FA894;
+  --mint2:#7DB8A8;
+  --mint3:#A8D5C8;
+  --mint-soft:#E8F4F0;
+  --peach:#F5C9A8;
+  --peach2:#E8A887;
+  --pastel:#8BBFB0;
+  --pastel-deep:#6FA89A;
+  --ink:#2F3E4A;
+  --ink2:#5A6B78;
+  --ink3:#7A8B97;
+  --white:#FFFFFF;
+  --line:rgba(47,62,74,.12);
+  --shadow:0 12px 32px rgba(47,62,74,.10);
+  --ease:cubic-bezier(.22,1,.36,1);
+  --wa:#25D366;
+  --err:#C45C4A;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Manrope,system-ui,sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+  font-size:16px;line-height:24px;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{text-wrap:balance;font-weight:600;overflow-wrap:anywhere}
+p{text-wrap:pretty;overflow-wrap:anywhere}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px;width:100%}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;color:#000;padding:8px 12px;border-radius:8px;z-index:99}
+.skip:focus{left:8px}
+:focus-visible{outline:2px solid var(--mint);outline-offset:2px;border-radius:8px}
+
+.h1{font-size:48px;line-height:1;font-weight:600}
+.h2{font-size:36px;line-height:40px;font-weight:600}
+.h3{font-size:30px;line-height:36px;font-weight:600}
+.h4{font-size:24px;line-height:32px;font-weight:600}
+.title{font-size:18px;line-height:28px;font-weight:600}
+.body{font-size:16px;line-height:24px;font-weight:400;color:var(--ink2)}
+.body-sm{font-size:14px;line-height:20px;font-weight:400;color:var(--ink2)}
+.caption{font-size:12px;line-height:16px;font-weight:500;color:var(--ink3);letter-spacing:.04em;text-transform:uppercase}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:8px 12px;border-radius:8px;font-size:16px;line-height:24px;font-weight:600;
+  border:1.5px solid transparent;cursor:pointer;transition:transform .3s var(--ease),background .3s var(--ease),color .3s var(--ease),border-color .3s var(--ease),opacity .3s var(--ease);
+}
+.btn:active{transform:scale(.98)}
+.btn-mint{background:var(--mint);color:#fff}
+.btn-mint:hover{background:#4E9785}
+.btn-peach{background:var(--peach);color:var(--ink)}
+.btn-peach:hover{background:var(--peach2)}
+.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.btn-outline{background:transparent;color:var(--mint);border-color:var(--mint)}
+.btn-outline:hover{background:var(--mint-soft)}
+.btn-link{background:transparent;color:var(--mint);padding:0;border:0;font-size:14px;line-height:20px;font-weight:600}
+.btn-link:hover{opacity:.8}
+.btn-sm{font-size:14px;line-height:20px;padding:8px 12px}
+.btn-wa{background:var(--wa);color:#fff;width:100%}
+.btn-wa:hover{background:#1ebe5d}
+.btn[disabled]{opacity:.5;cursor:not-allowed}
+
+.demo-banner{
+  position:sticky;top:0;z-index:50;
+  background:#2F3E4A;color:#fff;
+  display:grid;place-items:center;
+  padding:8px 16px;text-align:center;
+  font-size:13px;line-height:18px;font-weight:500
+}
+.demo-banner a{color:#A8D5C8;text-decoration:underline;text-underline-offset:2px}
+
+.site-header{position:absolute;left:0;right:0;z-index:20;padding:16px 0}
+.header-grid{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:24px}
+.brand{display:grid;grid-auto-flow:column;align-items:center;gap:10px;color:#fff;font-weight:700;font-size:15px;letter-spacing:.04em;text-transform:uppercase}
+.brand-icon{width:36px;height:36px;border-radius:999px;background:rgba(255,255,255,.18);backdrop-filter:blur(8px);display:grid;place-items:center}
+.brand-icon svg{width:20px;height:20px;fill:#fff}
+.nav{display:grid;grid-auto-flow:column;justify-content:center;gap:24px}
+.nav a{color:rgba(255,255,255,.9);font-size:14px;line-height:20px;font-weight:500;transition:opacity .3s var(--ease)}
+.nav a:hover,.nav a[aria-current="page"]{opacity:1;color:#fff}
+.menu-toggle{display:none;width:40px;height:40px;border:0;border-radius:8px;background:rgba(255,255,255,.16);color:#fff;cursor:pointer}
+
+.hero{position:relative;min-height:640px;display:grid;align-items:end;padding:120px 0 160px;color:#fff;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover}
+.hero-bg::after{content:"";position:absolute;inset:0;background:rgba(47,62,74,.42)}
+.hero-content{position:relative;z-index:1;display:grid;gap:16px;max-width:680px}
+.hero-content h1{font-size:60px;line-height:1;font-weight:600;background:linear-gradient(90deg,#FFFFFF 0%,#D8D8D8 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-content p{color:rgba(255,255,255,.92);font-size:18px;line-height:28px;max-width:520px}
+.hero-actions{display:grid;grid-auto-flow:column;justify-content:start;gap:12px;margin-top:8px}
+
+.overlap-wrap{position:relative;margin-top:-96px;padding-bottom:64px;z-index:5}
+.overlap-wrap::before{content:"";position:absolute;left:0;right:0;bottom:0;height:55%;background:var(--cream);border-radius:80% 80% 0 0 / 48px 48px 0 0;z-index:0}
+.cards-3{position:relative;z-index:1;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.svc-card{background:var(--white);border-radius:16px;padding:32px 24px;box-shadow:var(--shadow);display:grid;gap:12px;align-content:start;transition:transform .5s var(--ease)}
+.svc-card:hover{transform:translateY(-4px)}
+.icon-line{width:40px;height:40px;color:var(--mint);display:grid;place-items:center}
+.icon-line svg{width:32px;height:32px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+
+.how{background:var(--white);padding:64px 0 80px}
+.how-head{display:grid;gap:8px;margin-bottom:40px;text-align:center;justify-items:center}
+.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.step-card{display:grid;gap:12px;align-content:start;background:var(--cream);border-radius:16px;padding:24px}
+.step-num{width:40px;height:40px;border-radius:999px;background:var(--mint);color:#fff;display:grid;place-items:center;font-size:16px;line-height:24px;font-weight:600}
+
+.tagline{padding:80px 0;background:var(--mint-soft)}
+.tagline-inner{max-width:720px;margin:0 auto;text-align:center}
+.tagline h2{font-size:36px;line-height:40px;font-weight:600;color:var(--ink)}
+.tagline .word{opacity:.3;transition:opacity .5s var(--ease);display:inline}
+.tagline.is-in .word,#tagline.is-in .word{opacity:1}
+.tagline.is-in .word:nth-child(1){transition-delay:0ms}
+.tagline.is-in .word:nth-child(2){transition-delay:60ms}
+.tagline.is-in .word:nth-child(3){transition-delay:120ms}
+.tagline.is-in .word:nth-child(4){transition-delay:180ms}
+.tagline.is-in .word:nth-child(5){transition-delay:240ms}
+.tagline.is-in .word:nth-child(6){transition-delay:300ms}
+.tagline.is-in .word:nth-child(7){transition-delay:360ms}
+.tagline.is-in .word:nth-child(8){transition-delay:420ms}
+.tagline.is-in .word:nth-child(9){transition-delay:480ms}
+.tagline.is-in .word:nth-child(10){transition-delay:540ms}
+.tagline.is-in .word:nth-child(11){transition-delay:600ms}
+.tagline.is-in .word:nth-child(12){transition-delay:660ms}
+
+.gallery{background:var(--pastel);padding:80px 0}
+.gallery-head{display:grid;gap:8px;margin-bottom:40px;text-align:center;justify-items:center;color:#fff}
+.gallery-head .caption{color:rgba(255,255,255,.8)}
+.gallery-head h2{color:#fff;font-size:30px;line-height:36px}
+.cards-gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.g-card{background:var(--white);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);display:grid;grid-template-rows:auto 1fr;transition:transform .5s var(--ease)}
+.g-card:hover{transform:translateY(-4px)}
+.g-card figure{aspect-ratio:4/3;overflow:hidden;margin:0}
+.g-card img{width:100%;height:100%;object-fit:cover}
+.g-card .body-box{display:grid;gap:12px;padding:24px;align-content:start}
+
+.agenda{background:var(--cream);padding:80px 0}
+.agenda-head{display:grid;gap:8px;margin-bottom:40px;max-width:640px}
+.agenda-grid{display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:start}
+.agenda-form{background:var(--white);border-radius:16px;padding:32px;box-shadow:var(--shadow);display:grid;gap:32px}
+.form-block{display:grid;gap:16px;min-width:0}
+.form-block legend,.form-label{font-size:16px;line-height:24px;font-weight:600;color:var(--ink)}
+.form-block fieldset{border:0;display:grid;gap:16px;min-width:0}
+.help{font-size:14px;line-height:20px;color:var(--ink2)}
+.svc-pick{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pick{position:relative;display:block;min-width:0}
+.pick input{position:absolute;opacity:0;width:1px;height:1px;margin:0;pointer-events:none}
+.pick span{display:grid;align-content:center;min-height:56px;padding:12px 16px;border-radius:12px;border:1.5px solid var(--line);background:var(--cream);font-size:14px;line-height:20px;font-weight:600;cursor:pointer;transition:background .3s var(--ease),border-color .3s var(--ease),color .3s var(--ease)}
+.pick input:checked + span{background:var(--mint-soft);border-color:var(--mint);color:var(--ink)}
+.pick input:focus-visible + span{outline:2px solid var(--mint);outline-offset:2px}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:grid;gap:8px;min-width:0}
+.field-full{grid-column:1 / -1}
+.field input,.field textarea,.field select{
+  width:100%;max-width:100%;padding:12px;border:1.5px solid var(--line);border-radius:8px;
+  background:var(--cream);color:var(--ink);font:inherit;font-size:16px;line-height:24px
+}
+.field textarea{min-height:96px;resize:vertical}
+.field input:hover,.field textarea:hover{border-color:var(--mint2)}
+.field.is-invalid input,.field.is-invalid textarea,.form-block.is-invalid .pick span{border-color:var(--err)}
+.error{font-size:12px;line-height:16px;color:var(--err);display:none}
+.field.is-invalid .error,.form-block.is-invalid .error,.form-alert{display:block}
+.form-alert{background:#FDECEA;color:var(--err);border-radius:8px;padding:12px 16px;font-size:14px;line-height:20px;font-weight:500}
+.form-alert[hidden]{display:none}
+.porte-grid,.slot-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.pick.slot span{text-align:center;min-height:48px;place-items:center}
+.pick.porte span{text-align:center;place-items:center}
+.form-actions{display:grid;gap:12px}
+.form-note{font-size:13px;line-height:18px;color:var(--ink3)}
+
+.summary{
+  background:var(--white);border-radius:16px;padding:24px;box-shadow:var(--shadow);
+  display:grid;gap:16px;align-content:start;position:sticky;top:56px
+}
+.summary h3{font-size:18px;line-height:28px;font-weight:600}
+.summary-list{display:grid;gap:8px;list-style:none;margin:0}
+.summary-list .sum-row{display:grid;gap:2px;padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;line-height:20px}
+.summary-list .sum-row:last-child{border-bottom:0}
+.summary-list dd{margin:0}
+.summary-list dt,.sum-label{font-size:12px;line-height:16px;font-weight:500;color:var(--ink3);letter-spacing:.04em;text-transform:uppercase}
+.summary-list .sum-value{color:var(--ink);font-weight:500;overflow-wrap:anywhere}
+.summary-empty{color:var(--ink3);font-size:14px;line-height:20px}
+
+.contact{background:var(--cream2);padding:64px 0}
+.contact-box{display:grid;grid-template-columns:1.2fr auto;gap:24px;align-items:center;background:var(--white);border-radius:16px;padding:32px;box-shadow:var(--shadow)}
+.contact-box p{margin-top:8px}
+
+.site-footer{background:var(--cream2);padding:32px 0;border-top:1px solid var(--line)}
+.footer-grid{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center}
+.footer-grid p{font-size:13px;line-height:18px;color:var(--ink3)}
+.footer-grid a{color:var(--mint);font-weight:600}
+
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal,.tagline .word{opacity:1;transform:none}
+}
+
+@media (max-width:900px){
+  .header-grid{grid-template-columns:auto auto;justify-content:space-between}
+  .nav,.header-cta{display:none}
+  .menu-toggle{display:grid;place-items:center}
+  .nav.open{
+    display:grid;grid-auto-flow:row;justify-content:stretch;
+    position:fixed;inset:0;z-index:40;
+    background:rgba(47,62,74,.94);backdrop-filter:blur(12px);
+    padding:96px 32px;gap:24px;align-content:start
+  }
+  .nav.open a{font-size:24px;line-height:32px;color:#fff}
+  .hero{min-height:560px;padding:112px 0 140px}
+  .hero-content h1{font-size:40px}
+  .hero-actions{grid-auto-flow:row;justify-content:stretch}
+  .hero-actions .btn{width:100%}
+  .cards-3{grid-template-columns:1fr;gap:16px}
+  .overlap-wrap{margin-top:-72px}
+  .steps-grid{grid-template-columns:1fr 1fr}
+  .cards-gallery{grid-template-columns:1fr}
+  .agenda-grid{grid-template-columns:1fr}
+  .summary{position:static}
+  .contact-box{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr;text-align:center;justify-items:center}
+  .h1{font-size:36px}
+  .tagline h2{font-size:28px;line-height:34px}
+}
+@media (max-width:480px){
+  .wrap{padding:0 16px}
+  .hero-content h1{font-size:36px}
+  .steps-grid{grid-template-columns:1fr}
+  .svc-pick{grid-template-columns:1fr}
+  .fields{grid-template-columns:1fr}
+  .slot-grid{grid-template-columns:1fr 1fr}
+  .agenda-form{padding:24px 16px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<div class="demo-banner">
+  Prévia de demonstração feita por Lucas Emmanuel ·
+  <a href="https://wa.me/5531995246186?text=Oi%20Lucas%21%20Vi%20a%20pr%C3%A9via%20do%20site%20que%20voc%C3%AA%20fez%20pra%20minha%20loja." target="_blank" rel="noopener">fale comigo no WhatsApp</a>
+</div>
+
+<header class="site-header">
+  <div class="wrap header-grid">
+    <a class="brand" href="#inicio" aria-label="Pet Feliz">
+      <span class="brand-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.5 9.5c0-1.1.8-2 1.8-2s1.8.9 1.8 2-.8 2-1.8 2-1.8-.9-1.8-2zm5.2 0c0-1.1.8-2 1.8-2s1.8.9 1.8 2-.8 2-1.8 2-1.8-.9-1.8-2zM6.8 8.2c0-1 .7-1.8 1.6-1.8S10 7.2 10 8.2s-.7 1.8-1.6 1.8S6.8 9.2 6.8 8.2zm10.4 0c0-1 .7-1.8 1.6-1.8s1.6.8 1.6 1.8-.7 1.8-1.6 1.8-1.6-.8-1.6-1.8zM9.2 13.2c0 2 1.4 3.6 2.8 3.6s2.8-1.6 2.8-3.6c0-1-.7-1.5-1.4-1.5H10.6c-.7 0-1.4.5-1.4 1.5z"/></svg>
+      </span>
+      Pet Feliz
+    </a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#inicio" aria-current="page">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#agendar">Agendar</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn btn-peach btn-sm header-cta" href="#agendar">Agendar em casa</a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" id="menuBtn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="conteudo">
+  <section class="hero" id="inicio">
+    <div class="hero-bg" aria-hidden="true">
+      <img src="img/hero.jpg" alt="" width="1600" height="900">
+    </div>
+    <div class="wrap hero-content">
+      <p class="caption" style="color:rgba(255,255,255,.75)">Modelo de demonstração</p>
+      <h1>Banho e tosa em domicílio</h1>
+      <p>O pet shop vai até você. Escolha os serviços, o dia e o horário; o atendimento acontece no conforto da sua casa.</p>
+      <div class="hero-actions">
+        <a class="btn btn-mint" href="#agendar">Agendar em casa</a>
+        <a class="btn btn-ghost" href="#como-funciona">Como funciona</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="overlap-wrap" id="servicos" aria-label="Serviços">
+    <div class="wrap">
+      <div class="cards-3">
+        <article class="svc-card reveal">
+          <div class="icon-line" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><path d="M8 20c2-4 5-6 8-6s6 2 8 6"/><circle cx="12" cy="12" r="2"/><circle cx="20" cy="12" r="2"/><path d="M10 24h12"/><path d="M16 8v4"/></svg>
+          </div>
+          <h3 class="title">Banho e tosa</h3>
+          <p class="body-sm">Higiene completa na sua casa, com produtos suaves, secagem cuidadosa e tosa sob medida para o porte do seu pet.</p>
+          <a class="btn btn-outline btn-sm" href="#agendar">Agendar banho e tosa</a>
+        </article>
+        <article class="svc-card reveal">
+          <div class="icon-line" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><path d="M8 22c0-4 3.5-8 8-8s8 4 8 8"/><path d="M12 14c0-2 1.5-3.5 4-3.5s4 1.5 4 3.5"/><path d="M10 24h12"/><path d="M16 10V8"/></svg>
+          </div>
+          <h3 class="title">Tosa e bucal</h3>
+          <p class="body-sm">Tosa higiênica e cuidado com a higiene bucal, feitos com calma no ambiente que o seu pet já conhece.</p>
+          <a class="btn btn-outline btn-sm" href="#agendar">Agendar tosa e bucal</a>
+        </article>
+        <article class="svc-card reveal">
+          <div class="icon-line" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><path d="M16 6c4 3 8 7 8 12a8 8 0 1 1-16 0c0-5 4-9 8-12z"/><path d="M16 16v6"/></svg>
+          </div>
+          <h3 class="title">Hidratação de pelagem</h3>
+          <p class="body-sm">Tratamento para deixar a pelagem macia e hidratada, sozinho ou junto do banho e da tosa.</p>
+          <a class="btn btn-outline btn-sm" href="#agendar">Agendar hidratação</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="como-funciona">
+    <div class="wrap">
+      <div class="how-head reveal">
+        <p class="caption">Como funciona</p>
+        <h2 class="h3">Do pedido até a sua casa</h2>
+        <p class="body" style="max-width:520px">Quatro passos simples. Você agenda por aqui e a confirmação acontece pelo WhatsApp, antes da visita.</p>
+      </div>
+      <div class="steps-grid">
+        <article class="step-card reveal">
+          <span class="step-num" aria-hidden="true">1</span>
+          <h3 class="title">Escolhe os serviços</h3>
+          <p class="body-sm">Marque banho, tosa, tosa e bucal, hidratação ou o combo completo.</p>
+        </article>
+        <article class="step-card reveal">
+          <span class="step-num" aria-hidden="true">2</span>
+          <h3 class="title">Marca o horário</h3>
+          <p class="body-sm">Informe o dia, o horário de preferência, o porte do pet e o seu endereço.</p>
+        </article>
+        <article class="step-card reveal">
+          <span class="step-num" aria-hidden="true">3</span>
+          <h3 class="title">Confirmamos pelo WhatsApp</h3>
+          <p class="body-sm">O pedido abre no WhatsApp com os dados prontos. O horário fica confirmado por lá.</p>
+        </article>
+        <article class="step-card reveal">
+          <span class="step-num" aria-hidden="true">4</span>
+          <h3 class="title">Vamos até a sua casa</h3>
+          <p class="body-sm">No dia combinado, o atendimento de banho e tosa acontece no conforto de casa.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tagline" aria-label="Promessa">
+    <div class="wrap">
+      <div class="tagline-inner" id="tagline">
+        <h2>
+          <span class="word">O</span>
+          <span class="word">pet</span>
+          <span class="word">shop</span>
+          <span class="word">vai</span>
+          <span class="word">até</span>
+          <span class="word">você,</span>
+          <span class="word">no</span>
+          <span class="word">conforto</span>
+          <span class="word">de</span>
+          <span class="word">casa</span>
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="cuidado" aria-label="Cuidado em casa">
+    <div class="wrap">
+      <div class="gallery-head reveal">
+        <p class="caption">Cuidado em casa</p>
+        <h2>Banho e tosa no ritmo do seu pet</h2>
+      </div>
+      <div class="cards-gallery">
+        <article class="g-card reveal">
+          <figure>
+            <img src="img/banho.jpg" alt="Cão recebendo banho com cuidado em ambiente claro" width="800" height="600" loading="lazy">
+          </figure>
+          <div class="body-box">
+            <h3 class="title">Banho com calma</h3>
+            <p class="body-sm">Higiene feita sem pressa, no lugar em que o seu pet se sente seguro.</p>
+            <a class="btn btn-outline btn-sm" href="#agendar">Agendar banho</a>
+          </div>
+        </article>
+        <article class="g-card reveal">
+          <figure>
+            <img src="img/galeria.jpg" alt="Cão branco recém tosado em almofada pêssego" width="800" height="600" loading="lazy">
+          </figure>
+          <div class="body-box">
+            <h3 class="title">Depois da tosa</h3>
+            <p class="body-sm">Pelagem alinhada e acabamento caprichado, sem deslocamento até uma loja.</p>
+            <a class="btn btn-outline btn-sm" href="#agendar">Agendar tosa</a>
+          </div>
+        </article>
+      </div>
+      <p class="caption" style="text-align:center;margin-top:24px;color:rgba(255,255,255,.85)">Imagens ilustrativas geradas por IA</p>
+    </div>
+  </section>
+
+  <section class="agenda" id="agendar">
+    <div class="wrap">
+      <div class="agenda-head reveal">
+        <p class="caption">Agende em casa</p>
+        <h2 class="h3">Monte o pedido e envie pelo WhatsApp</h2>
+        <p class="body">Escolha os serviços, a data e o horário de preferência. O horário é confirmado pelo WhatsApp, depois que o pedido chegar.</p>
+      </div>
+      <div class="agenda-grid">
+        <form class="agenda-form reveal" id="agendaForm" novalidate>
+          <div class="form-alert" id="formAlert" hidden role="alert">Preencha os campos obrigatórios para enviar o agendamento.</div>
+
+          <div class="form-block" id="block-servicos">
+            <fieldset>
+              <legend>Serviços</legend>
+              <p class="help">Você pode marcar mais de um. Sem valores nesta prévia; o combinado acontece no WhatsApp.</p>
+              <div class="svc-pick">
+                <label class="pick"><input type="checkbox" name="servico" value="Banho"><span>Banho</span></label>
+                <label class="pick"><input type="checkbox" name="servico" value="Tosa"><span>Tosa</span></label>
+                <label class="pick"><input type="checkbox" name="servico" value="Banho e tosa"><span>Banho e tosa</span></label>
+                <label class="pick"><input type="checkbox" name="servico" value="Tosa e bucal"><span>Tosa e bucal</span></label>
+                <label class="pick"><input type="checkbox" name="servico" value="Hidratação de pelagem"><span>Hidratação de pelagem</span></label>
+                <label class="pick"><input type="checkbox" name="servico" value="Banho + tosa + hidratação"><span>Banho + tosa + hidratação</span></label>
+              </div>
+              <p class="error" id="err-servicos">Escolha pelo menos um serviço.</p>
+            </fieldset>
+          </div>
+
+          <div class="form-block">
+            <fieldset>
+              <legend>Dados do pet</legend>
+              <div class="fields">
+                <div class="field field-full" id="block-porte">
+                  <span class="form-label" id="label-porte">Porte do pet</span>
+                  <div class="porte-grid" role="radiogroup" aria-labelledby="label-porte">
+                    <label class="pick porte"><input type="radio" name="porte" value="Pequeno"><span>Pequeno</span></label>
+                    <label class="pick porte"><input type="radio" name="porte" value="Médio"><span>Médio</span></label>
+                    <label class="pick porte"><input type="radio" name="porte" value="Grande"><span>Grande</span></label>
+                  </div>
+                  <p class="error" id="err-porte">Informe o porte do pet.</p>
+                </div>
+                <div class="field" id="field-pet">
+                  <label for="petNome">Nome do pet</label>
+                  <input type="text" id="petNome" name="petNome" autocomplete="off" required maxlength="80">
+                  <p class="error" id="err-pet">Informe o nome do pet.</p>
+                </div>
+                <div class="field">
+                  <label for="petRaca">Raça <span class="help" style="text-transform:none;letter-spacing:0;font-weight:400">(opcional)</span></label>
+                  <input type="text" id="petRaca" name="petRaca" autocomplete="off" maxlength="80">
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="form-block" id="block-quando">
+            <fieldset>
+              <legend>Data e horário</legend>
+              <p class="help">O horário abaixo é uma preferência. A confirmação acontece pelo WhatsApp.</p>
+              <div class="fields">
+                <div class="field" id="field-data">
+                  <label for="data">Data</label>
+                  <input type="date" id="data" name="data" required>
+                  <p class="error" id="err-data">Escolha uma data a partir de hoje.</p>
+                </div>
+                <div class="field field-full" id="field-horario">
+                  <span class="form-label" id="label-horario">Horário preferido</span>
+                  <div class="slot-grid" role="radiogroup" aria-labelledby="label-horario">
+                    <label class="pick slot"><input type="radio" name="horario" value="08:00"><span>08:00</span></label>
+                    <label class="pick slot"><input type="radio" name="horario" value="09:30"><span>09:30</span></label>
+                    <label class="pick slot"><input type="radio" name="horario" value="11:00"><span>11:00</span></label>
+                    <label class="pick slot"><input type="radio" name="horario" value="13:30"><span>13:30</span></label>
+                    <label class="pick slot"><input type="radio" name="horario" value="15:00"><span>15:00</span></label>
+                    <label class="pick slot"><input type="radio" name="horario" value="16:30"><span>16:30</span></label>
+                  </div>
+                  <p class="error" id="err-horario">Escolha um horário de preferência.</p>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="form-block">
+            <fieldset>
+              <legend>Seus dados e o endereço</legend>
+              <div class="fields">
+                <div class="field field-full" id="field-tutor">
+                  <label for="tutor">Nome do tutor</label>
+                  <input type="text" id="tutor" name="tutor" autocomplete="name" required maxlength="80">
+                  <p class="error" id="err-tutor">Informe o seu nome.</p>
+                </div>
+                <div class="field field-full" id="field-endereco">
+                  <label for="endereco">Endereço completo</label>
+                  <input type="text" id="endereco" name="endereco" autocomplete="street-address" required maxlength="160" placeholder="Rua, número e complemento">
+                  <p class="error" id="err-endereco">Informe o endereço completo.</p>
+                </div>
+                <div class="field field-full" id="field-bairro">
+                  <label for="bairro">Bairro</label>
+                  <input type="text" id="bairro" name="bairro" autocomplete="address-level3" required maxlength="80">
+                  <p class="error" id="err-bairro">Informe o bairro.</p>
+                </div>
+                <div class="field field-full">
+                  <label for="obs">Observações <span class="help" style="text-transform:none;letter-spacing:0;font-weight:400">(opcional)</span></label>
+                  <textarea id="obs" name="obs" maxlength="400" placeholder="Exemplo: o pet tem medo de secador, portão lateral, etc."></textarea>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn-wa" type="submit" id="enviarBtn">Enviar agendamento pelo WhatsApp</button>
+            <p class="form-note">Os dados seguem direto no WhatsApp, sem cadastro neste site. Nesta prévia o número é o de Lucas Emmanuel, só para demonstração.</p>
+          </div>
+        </form>
+
+        <aside class="summary reveal" id="resumo" aria-live="polite">
+          <h3>Resumo do pedido</h3>
+          <p class="summary-empty" id="resumoVazio">Escolha os serviços, a data e o horário para ver o resumo aqui.</p>
+          <dl class="summary-list" id="resumoLista" hidden></dl>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contato">
+    <div class="wrap">
+      <div class="contact-box reveal">
+        <div>
+          <p class="caption">Contato</p>
+          <h2 class="h4">Quer um site assim para o seu atendimento em domicílio?</h2>
+          <p class="body">Esta página é um modelo de demonstração. Fale com Lucas Emmanuel para adaptar o layout às cores e aos serviços do seu negócio.</p>
+        </div>
+        <a class="btn btn-mint" href="https://wa.me/5531995246186?text=Oi%20Lucas%21%20Vi%20a%20pr%C3%A9via%20do%20site%20que%20voc%C3%AA%20fez%20pra%20minha%20loja." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <p>Pet Feliz · modelo de demonstração de banho e tosa em domicílio · Imagens ilustrativas geradas por IA<br>Prévia feita por Lucas Emmanuel · não é o site oficial de um negócio real</p>
+    <a href="https://wa.me/5531995246186?text=Oi%20Lucas%21%20Vi%20a%20pr%C3%A9via%20do%20site%20que%20voc%C3%AA%20fez%20pra%20minha%20loja." target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const WHATSAPP = '5531995246186'; // trocar pelo número do cliente.
+
+  var btn=document.getElementById('menuBtn');
+  var nav=document.getElementById('nav');
+  if(btn&&nav){
+    btn.addEventListener('click',function(){
+      var open=nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open?'true':'false');
+      btn.setAttribute('aria-label', open?'Fechar menu':'Abrir menu');
+    });
+    nav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click',function(){
+        nav.classList.remove('open');
+        btn.setAttribute('aria-expanded','false');
+        btn.setAttribute('aria-label','Abrir menu');
+      });
+    });
+  }
+
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var reveals=document.querySelectorAll('.reveal');
+  if(reduce){
+    reveals.forEach(function(el){el.classList.add('in')});
+    var t=document.getElementById('tagline');
+    if(t) t.classList.add('is-in');
+  }else if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}
+      });
+    },{threshold:.15,rootMargin:'0px 0px -40px 0px'});
+    reveals.forEach(function(el){io.observe(el)});
+    var tag=document.getElementById('tagline');
+    if(tag){
+      var tagTarget=tag.closest('.tagline')||tag;
+      var tio=new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if(e.isIntersecting){e.target.classList.add('is-in');tio.unobserve(e.target)}
+        });
+      },{threshold:.4});
+      tio.observe(tagTarget);
+    }
+  }else{
+    reveals.forEach(function(el){el.classList.add('in')});
+  }
+
+  var form=document.getElementById('agendaForm');
+  var dateInput=document.getElementById('data');
+  var alertBox=document.getElementById('formAlert');
+
+  function todayISO(){
+    var n=new Date();
+    var m=String(n.getMonth()+1).padStart(2,'0');
+    var d=String(n.getDate()).padStart(2,'0');
+    return n.getFullYear()+'-'+m+'-'+d;
+  }
+  function formatDateBR(iso){
+    if(!iso) return '';
+    var p=iso.split('-');
+    if(p.length!==3) return iso;
+    return p[2]+'/'+p[1]+'/'+p[0];
+  }
+  if(dateInput){
+    dateInput.min=todayISO();
+  }
+
+  function selectedServices(){
+    return Array.prototype.map.call(
+      form.querySelectorAll('input[name="servico"]:checked'),
+      function(el){return el.value}
+    );
+  }
+  function selectedValue(name){
+    var el=form.querySelector('input[name="'+name+'"]:checked');
+    return el?el.value:'';
+  }
+  function val(id){
+    var el=document.getElementById(id);
+    return el?el.value.trim():'';
+  }
+  function setInvalid(box, on){
+    if(!box) return;
+    box.classList.toggle('is-invalid', !!on);
+  }
+
+  function validate(){
+    var ok=true;
+    var first=null;
+    function fail(box, cond, focusEl){
+      setInvalid(box, cond);
+      if(cond){
+        ok=false;
+        if(!first && focusEl) first=focusEl;
+      }
+    }
+    var services=selectedServices();
+    fail(document.getElementById('block-servicos'), services.length===0, form.querySelector('input[name="servico"]'));
+    fail(document.getElementById('block-porte'), !selectedValue('porte'), form.querySelector('input[name="porte"]'));
+    fail(document.getElementById('field-pet'), !val('petNome'), document.getElementById('petNome'));
+    var data=val('data');
+    var dataBad=!data || data<todayISO();
+    fail(document.getElementById('field-data'), dataBad, dateInput);
+    fail(document.getElementById('field-horario'), !selectedValue('horario'), form.querySelector('input[name="horario"]'));
+    fail(document.getElementById('field-tutor'), !val('tutor'), document.getElementById('tutor'));
+    fail(document.getElementById('field-endereco'), !val('endereco'), document.getElementById('endereco'));
+    fail(document.getElementById('field-bairro'), !val('bairro'), document.getElementById('bairro'));
+    if(alertBox){
+      alertBox.hidden=ok;
+    }
+    if(first) first.focus();
+    return ok;
+  }
+
+  function buildMessage(){
+    var lines=[
+      'Olá! Gostaria de agendar um atendimento em domicílio.',
+      '',
+      'Serviços: '+selectedServices().join(', '),
+      'Porte: '+selectedValue('porte'),
+      'Nome do pet: '+val('petNome')
+    ];
+    var raca=val('petRaca');
+    if(raca) lines.push('Raça: '+raca);
+    lines.push('Data: '+formatDateBR(val('data')));
+    lines.push('Horário preferido: '+selectedValue('horario')+' (a confirmar pelo WhatsApp)');
+    lines.push('Tutor: '+val('tutor'));
+    lines.push('Endereço: '+val('endereco'));
+    lines.push('Bairro: '+val('bairro'));
+    var obs=val('obs');
+    if(obs) lines.push('Observações: '+obs);
+    return lines.join('\n');
+  }
+
+  function updateSummary(){
+    var list=document.getElementById('resumoLista');
+    var empty=document.getElementById('resumoVazio');
+    var services=selectedServices();
+    var data=val('data');
+    var hora=selectedValue('horario');
+    var pet=val('petNome');
+    var porte=selectedValue('porte');
+    var has=services.length || data || hora || pet || porte;
+    if(!has){
+      if(empty) empty.hidden=false;
+      if(list){list.hidden=true;list.innerHTML=''}
+      return;
+    }
+    if(empty) empty.hidden=true;
+    var rows=[];
+    rows.push(['Serviços', services.length?services.join(', '):'Ainda não escolhidos']);
+    if(porte) rows.push(['Porte', porte]);
+    if(pet) rows.push(['Pet', pet+(val('petRaca')?' · '+val('petRaca'):'')]);
+    rows.push(['Data', data?formatDateBR(data):'Ainda não escolhida']);
+    rows.push(['Horário', hora?hora+' (a confirmar pelo WhatsApp)':'Ainda não escolhido']);
+    if(val('tutor')) rows.push(['Tutor', val('tutor')]);
+    if(val('bairro') || val('endereco')) rows.push(['Local', [val('endereco'), val('bairro')].filter(Boolean).join(' · ')]);
+    list.innerHTML=rows.map(function(r){
+      return '<div class="sum-row"><dt class="sum-label">'+r[0]+'</dt><dd class="sum-value"></dd></div>';
+    }).join('');
+    Array.prototype.forEach.call(list.querySelectorAll('.sum-value'), function(dd,i){
+      dd.textContent=rows[i][1];
+    });
+    list.hidden=false;
+  }
+
+  if(form){
+    form.addEventListener('input', updateSummary);
+    form.addEventListener('change', updateSummary);
+    form.addEventListener('submit', function(ev){
+      ev.preventDefault();
+      if(!validate()) return;
+      var url='https://wa.me/'+WHATSAPP+'?text='+encodeURIComponent(buildMessage());
+      window.open(url, '_blank', 'noopener');
+    });
+    updateSummary();
+  }
+})();
+</script>
+</body>
+</html>
