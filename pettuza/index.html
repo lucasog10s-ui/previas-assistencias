@@ -129,7 +129,7 @@ p{text-wrap:pretty;overflow-wrap:anywhere}
   overflow:hidden
 }
 .hero-bg{position:absolute;inset:0;z-index:0}
-.hero-bg img{width:100%;height:100%;object-fit:cover}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 20%}
 .hero-bg::after{
   content:"";position:absolute;inset:0;
   background:rgba(35,32,32,.46)
@@ -269,7 +269,7 @@ p{text-wrap:pretty;overflow-wrap:anywhere}
 .gallery-head h2{color:var(--ink);font-size:30px;line-height:36px}
 .cards-gallery{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns:repeat(2,1fr);
   gap:24px
 }
 .g-card{
@@ -419,7 +419,7 @@ p{text-wrap:pretty;overflow-wrap:anywhere}
 <main id="conteudo">
   <section class="hero" id="inicio">
     <div class="hero-bg" aria-hidden="true">
-      <img src="img/hero.jpg" alt="" width="1600" height="900">
+      <img src="img/hero.jpg" alt="Fachada da Pet Tuza na Rua Francisco Bicalho, em Belo Horizonte" width="1280" height="960">
     </div>
     <div class="wrap hero-content">
       <p class="caption" style="color:rgba(255,255,255,.75)">Pet shop no Caiçara Adelaide</p>
@@ -562,17 +562,17 @@ p{text-wrap:pretty;overflow-wrap:anywhere}
       <div class="cards-gallery">
         <article class="g-card reveal">
           <figure>
-            <img src="img/produtos.jpg" alt="Produtos para pets organizados em mesa de madeira clara" width="800" height="600" loading="lazy">
+            <img src="img/loja.jpg" alt="Vitrine da Pet Tuza na Rua Francisco Bicalho, com a área de banho visível pelo vidro" width="1280" height="960" loading="lazy">
           </figure>
           <div class="body-box">
-            <h3 class="title">Rações, brinquedos e produtos</h3>
-            <p class="body-sm">A loja oferece rações, brinquedos e outros produtos para o dia a dia do pet.</p>
-            <a class="btn btn-outline btn-sm" href="https://wa.me/5531988253438?text=Oi%2C%20Pet%20Tuza.%20Vi%20o%20site%20e%20quero%20saber%20sobre%20produtos%20e%20racoes." target="_blank" rel="noopener">Perguntar na loja</a>
+            <h3 class="title">A loja no Caiçara</h3>
+            <p class="body-sm">A vitrine e o espaço da Pet Tuza na Rua Francisco Bicalho, 2376, em Belo Horizonte.</p>
+            <a class="btn btn-outline btn-sm" href="https://www.google.com/maps?ftid=0xa6979aed34a38f:0xad42893bfaa058b2" target="_blank" rel="noopener">Ver no mapa</a>
           </div>
         </article>
         <article class="g-card reveal">
           <figure>
-            <img src="img/banho.jpg" alt="Cão tomando banho em um espaço claro de pet shop" width="800" height="600" loading="lazy">
+            <img src="img/banho.jpg" alt="Profissional da Pet Tuza ao lado de um golden retriever após a tosa, foto publicada pela loja" width="1080" height="1080" loading="lazy">
           </figure>
           <div class="body-box">
             <h3 class="title">Banho e tosa</h3>
@@ -582,16 +582,26 @@ p{text-wrap:pretty;overflow-wrap:anywhere}
         </article>
         <article class="g-card reveal">
           <figure>
-            <img src="img/vet.jpg" alt="Consulta veterinária ilustrativa em ambiente claro" width="800" height="600" loading="lazy">
+            <img src="img/vet.jpg" alt="Profissional da Pet Tuza com um cão no interior da loja, foto publicada pela loja" width="1080" height="1080" loading="lazy">
           </figure>
           <div class="body-box">
-            <h3 class="title">Cuidado veterinário</h3>
+            <h3 class="title">Atendimento veterinário</h3>
             <p class="body-sm">Atendimento veterinário e vacinas para cães e gatos. Confirme a disponibilidade no WhatsApp.</p>
             <a class="btn btn-outline btn-sm" href="https://wa.me/5531988253438?text=Oi%2C%20Pet%20Tuza.%20Vi%20o%20site%20e%20quero%20falar%20sobre%20atendimento%20veterinario." target="_blank" rel="noopener">Falar no WhatsApp</a>
           </div>
         </article>
+        <article class="g-card reveal">
+          <figure>
+            <img src="img/thor.jpg" alt="Thor, um husky atendido na Pet Tuza, em foto publicada no Instagram da loja" width="512" height="640" loading="lazy">
+          </figure>
+          <div class="body-box">
+            <h3 class="title">Pets da loja</h3>
+            <p class="body-sm">Thor, em uma foto publicada no Instagram da Pet Tuza. Veja mais no perfil @pettuza.</p>
+            <a class="btn btn-outline btn-sm" href="https://www.instagram.com/pettuza/" target="_blank" rel="noopener">Ver no Instagram</a>
+          </div>
+        </article>
       </div>
-      <p class="caption" style="text-align:center;margin-top:24px">Imagens ilustrativas geradas por IA</p>
+      <p class="caption" style="text-align:center;margin-top:24px">Fotos publicadas pela Pet Tuza no Instagram, no Facebook e no anúncio da loja</p>
     </div>
   </section>
 
@@ -655,7 +665,7 @@ p{text-wrap:pretty;overflow-wrap:anywhere}
     <a class="footer-brand" href="#inicio" aria-label="Pet Tuza">
       <img src="img/logo.png" alt="Pet Tuza" width="495" height="495">
     </a>
-    <p>Pet Tuza · prévia de demonstração feita por Lucas Emmanuel<br>Imagens ilustrativas geradas por IA · não é o site oficial da loja</p>
+    <p>Pet Tuza · prévia de demonstração feita por Lucas Emmanuel<br>Fotos publicadas pela Pet Tuza · não é o site oficial da loja</p>
     <a href="https://wa.me/5531995246186?text=Oi%20Lucas%21%20Vi%20a%20pr%C3%A9via%20do%20site%20que%20voc%C3%AA%20fez%20pra%20minha%20loja." target="_blank" rel="noopener">Fale com Lucas</a>
   </div>
 </footer>
