@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bichos e Caprichos · Prévia de demonstração</title>
+<meta name="description" content="Prévia de site da Bichos e Caprichos, pet shop no Buritis, em Belo Horizonte: banho e tosa, atendimento veterinário e loja de produtos.">
+<meta property="og:title" content="Bichos e Caprichos · Prévia de demonstração">
+<meta property="og:description" content="Banho e tosa, atendimento veterinário e loja no Buritis, em Belo Horizonte.">
+<meta property="og:image" content="https://lucasog10s-ui.github.io/previas-assistencias/bichoscaprichos/img/logo.png">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FFF7FB;
+  --cream2:#F8E8F0;
+  --pink:#E82078;
+  --pink2:#C41766;
+  --pink3:#F5A3C8;
+  --pink-soft:#FDE8F2;
+  --cyan:#00A8E8;
+  --purple:#902088;
+  --ink:#1A1A1A;
+  --ink2:#5C5558;
+  --ink3:#8A827D;
+  --white:#FFFFFF;
+  --line:rgba(26,26,26,.12);
+  --shadow:0 12px 32px rgba(26,26,26,.10);
+  --ease:cubic-bezier(.22,1,.36,1);
+  --wa:#25D366;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Manrope,system-ui,sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+  font-size:16px;line-height:24px;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{text-wrap:balance;font-weight:600;overflow-wrap:anywhere}
+p{text-wrap:pretty;overflow-wrap:anywhere}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px;width:100%}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;color:#000;padding:8px 12px;border-radius:8px;z-index:99}
+.skip:focus{left:8px}
+:focus-visible{outline:2px solid var(--pink);outline-offset:2px;border-radius:8px}
+
+.h1{font-size:48px;line-height:1;font-weight:600}
+.h2{font-size:36px;line-height:40px;font-weight:600}
+.h3{font-size:30px;line-height:36px;font-weight:600}
+.h4{font-size:24px;line-height:32px;font-weight:600}
+.title{font-size:18px;line-height:28px;font-weight:600}
+.body{font-size:16px;line-height:24px;font-weight:400;color:var(--ink2)}
+.body-sm{font-size:14px;line-height:20px;font-weight:400;color:var(--ink2)}
+.caption{font-size:12px;line-height:16px;font-weight:500;color:var(--ink3);letter-spacing:.04em;text-transform:uppercase}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:8px 12px;border-radius:8px;font-size:16px;line-height:24px;font-weight:600;
+  border:1.5px solid transparent;cursor:pointer;
+  transition:transform .3s var(--ease),background .3s var(--ease),color .3s var(--ease),border-color .3s var(--ease),opacity .3s var(--ease);
+}
+.btn:active{transform:scale(.98)}
+.btn-pink{background:var(--pink);color:#fff}
+.btn-pink:hover{background:var(--pink2);color:#fff}
+.btn-ghost{
+  background:transparent;color:#fff;border-color:rgba(255,255,255,.7)
+}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.btn-outline{
+  background:transparent;color:var(--pink);border-color:var(--pink)
+}
+.btn-outline:hover{background:var(--pink-soft);color:var(--pink2)}
+.btn-sm{font-size:14px;line-height:20px;padding:8px 12px}
+
+.demo-banner{
+  position:sticky;top:0;z-index:50;
+  background:#1A1A1A;color:#fff;
+  display:grid;place-items:center;
+  padding:8px 16px;text-align:center;
+  font-size:13px;line-height:18px;font-weight:500
+}
+.demo-banner a{color:#F5A3C8;text-decoration:underline;text-underline-offset:2px}
+
+.site-header{
+  position:absolute;left:0;right:0;z-index:20;
+  padding:16px 0
+}
+.header-grid{
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  align-items:center;
+  gap:24px
+}
+.brand{
+  display:grid;grid-auto-flow:column;align-items:center;gap:0;
+  color:#fff
+}
+.brand img{
+  height:64px;width:auto;
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 4px 16px rgba(0,0,0,.18)
+}
+.nav{
+  display:grid;grid-auto-flow:column;justify-content:center;gap:24px
+}
+.nav a{
+  color:rgba(255,255,255,.9);font-size:14px;line-height:20px;font-weight:500;
+  transition:opacity .3s var(--ease)
+}
+.nav a:hover,.nav a[aria-current="page"]{opacity:1;color:#fff}
+.menu-toggle{
+  display:none;width:40px;height:40px;border:0;border-radius:8px;
+  background:rgba(255,255,255,.16);color:#fff;cursor:pointer
+}
+
+.hero{
+  position:relative;
+  min-height:640px;
+  display:grid;
+  align-items:end;
+  padding:120px 0 160px;
+  color:#fff;
+  overflow:hidden
+}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 35%}
+.hero-bg::after{
+  content:"";position:absolute;inset:0;
+  background:rgba(26,26,26,.48)
+}
+.hero-content{
+  position:relative;z-index:1;
+  display:grid;gap:16px;max-width:680px
+}
+.hero-content h1{
+  font-size:60px;line-height:1;font-weight:600;
+  background:linear-gradient(90deg,#FFFFFF 0%,#D8D8D8 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent
+}
+.hero-content p{color:rgba(255,255,255,.92);font-size:18px;line-height:28px;max-width:520px}
+.hero-actions{display:grid;grid-auto-flow:column;justify-content:start;gap:12px;margin-top:8px}
+.hero-proof{
+  display:grid;grid-auto-flow:column;justify-content:start;align-items:center;gap:8px;
+  font-size:14px;line-height:20px;font-weight:500;color:rgba(255,255,255,.9)
+}
+.hero-proof svg{width:16px;height:16px;fill:#F5A3C8}
+
+.overlap-wrap{
+  position:relative;
+  margin-top:-96px;
+  padding-bottom:64px;
+  z-index:5
+}
+.overlap-wrap::before{
+  content:"";
+  position:absolute;left:0;right:0;bottom:0;height:55%;
+  background:var(--cream);
+  border-radius:80% 80% 0 0 / 48px 48px 0 0;
+  z-index:0
+}
+.cards-3{
+  position:relative;z-index:1;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px
+}
+.svc-card{
+  background:var(--white);
+  border-radius:16px;
+  padding:32px 24px;
+  box-shadow:var(--shadow);
+  display:grid;
+  gap:12px;
+  align-content:start;
+  transition:transform .5s var(--ease)
+}
+.svc-card:hover{transform:translateY(-4px)}
+.icon-line{
+  width:40px;height:40px;color:var(--pink);
+  display:grid;place-items:center
+}
+.icon-line svg{width:32px;height:32px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+
+.focus{
+  background:var(--white);
+  padding:64px 0 80px
+}
+.focus-head{
+  display:grid;gap:8px;margin-bottom:40px;text-align:center;justify-items:center
+}
+.focus-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:0
+}
+.focus-item{
+  display:grid;gap:12px;justify-items:center;text-align:center;
+  padding:24px 20px;
+  border-right:1px solid var(--line)
+}
+.focus-item:last-child{border-right:0}
+.focus-item .icon-line{color:var(--pink)}
+
+.tagline{
+  padding:80px 0;
+  background:var(--pink-soft)
+}
+.tagline-inner{
+  max-width:720px;margin:0 auto;text-align:center
+}
+.tagline h2{
+  font-size:36px;line-height:40px;font-weight:600;color:var(--ink)
+}
+.tagline .word{
+  opacity:.3;transition:opacity .5s var(--ease);display:inline
+}
+.tagline.is-in .word{opacity:1}
+.tagline.is-in .word:nth-child(1){transition-delay:0ms}
+.tagline.is-in .word:nth-child(2){transition-delay:60ms}
+.tagline.is-in .word:nth-child(3){transition-delay:120ms}
+.tagline.is-in .word:nth-child(4){transition-delay:180ms}
+.tagline.is-in .word:nth-child(5){transition-delay:240ms}
+.tagline.is-in .word:nth-child(6){transition-delay:300ms}
+
+.steps{
+  background:var(--cream);
+  padding:80px 0
+}
+.steps-head{
+  display:grid;gap:8px;margin-bottom:40px;text-align:center;justify-items:center
+}
+.steps-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px
+}
+.step-card{
+  background:var(--white);
+  border-radius:16px;
+  padding:32px 24px;
+  box-shadow:var(--shadow);
+  display:grid;gap:12px;align-content:start
+}
+.step-num{
+  width:40px;height:40px;border-radius:999px;
+  background:var(--pink-soft);color:var(--pink);
+  display:grid;place-items:center;
+  font-size:16px;line-height:24px;font-weight:600
+}
+
+.gallery{
+  background:var(--pink3);
+  padding:80px 0
+}
+.gallery-head{
+  display:grid;gap:8px;margin-bottom:40px;text-align:center;justify-items:center;color:var(--ink)
+}
+.gallery-head .caption{color:rgba(26,26,26,.7)}
+.gallery-head h2{color:var(--ink);font-size:30px;line-height:36px}
+.cards-gallery{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:24px
+}
+.g-card{
+  background:var(--white);
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  display:grid;
+  grid-template-rows:auto 1fr;
+  transition:transform .5s var(--ease)
+}
+.g-card:hover{transform:translateY(-4px)}
+.g-card figure{aspect-ratio:4/3;overflow:hidden;margin:0}
+.g-card img{width:100%;height:100%;object-fit:cover}
+.g-card .body-box{
+  display:grid;gap:12px;padding:24px;align-content:start
+}
+
+.faq{
+  background:var(--white);
+  padding:80px 0
+}
+.faq-head{
+  display:grid;gap:8px;margin-bottom:40px;text-align:center;justify-items:center
+}
+.faq-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px
+}
+.faq-item{
+  background:var(--cream);
+  border-radius:16px;
+  padding:24px;
+  display:grid;gap:8px;align-content:start
+}
+
+.contact{
+  background:var(--cream);
+  padding:64px 0
+}
+.contact-box{
+  display:grid;
+  grid-template-columns:1.2fr auto;
+  gap:24px;
+  align-items:center;
+  background:var(--white);
+  border-radius:16px;
+  padding:32px;
+  box-shadow:var(--shadow)
+}
+.contact-box p{margin-top:8px}
+.contact-meta{
+  display:grid;gap:8px;margin-top:16px
+}
+.contact-meta a{color:var(--pink);font-weight:600}
+.contact-meta a:hover{opacity:.8}
+
+.site-footer{
+  background:var(--cream2);
+  padding:32px 0;
+  border-top:1px solid var(--line)
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  gap:16px;
+  align-items:center
+}
+.footer-brand img{
+  height:56px;width:auto;border-radius:12px;background:#fff
+}
+.footer-grid p{font-size:13px;line-height:18px;color:var(--ink3)}
+.footer-grid a{color:var(--pink);font-weight:600}
+
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal,.tagline .word{opacity:1;transform:none}
+}
+
+@media (max-width:900px){
+  .header-grid{grid-template-columns:auto auto;justify-content:space-between}
+  .nav,.header-cta{display:none}
+  .menu-toggle{display:grid;place-items:center}
+  .nav.open{
+    display:grid;grid-auto-flow:row;justify-content:stretch;
+    position:fixed;inset:0;z-index:40;
+    background:rgba(26,26,26,.94);backdrop-filter:blur(12px);
+    padding:96px 32px;gap:24px;align-content:start
+  }
+  .nav.open a{font-size:24px;line-height:32px;color:#fff}
+  .hero{min-height:560px;padding:112px 0 140px}
+  .hero-content h1{font-size:40px}
+  .hero-actions{grid-auto-flow:row;justify-content:stretch}
+  .hero-actions .btn{width:100%}
+  .cards-3,.steps-grid,.cards-gallery,.faq-grid{grid-template-columns:1fr;gap:16px}
+  .overlap-wrap{margin-top:-72px}
+  .focus-grid{grid-template-columns:1fr}
+  .focus-item,.focus-item:last-child{border-right:0;border-bottom:1px solid var(--line)}
+  .focus-item:last-child{border-bottom:0}
+  .contact-box{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr;text-align:center;justify-items:center}
+  .h1{font-size:36px}
+  .tagline h2{font-size:28px;line-height:34px}
+  .brand img{height:52px}
+}
+@media (max-width:480px){
+  .wrap{padding:0 16px}
+  .hero-content h1{font-size:36px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<div class="demo-banner">
+  Prévia de demonstração feita por Lucas Emmanuel ·
+  <a href="https://wa.me/5531995246186?text=Oi%20Lucas%21%20Vi%20a%20pr%C3%A9via%20do%20site%20que%20voc%C3%AA%20fez%20pra%20minha%20loja." target="_blank" rel="noopener">fale comigo no WhatsApp</a>
+</div>
+
+<header class="site-header">
+  <div class="wrap header-grid">
+    <a class="brand" href="#inicio" aria-label="Bichos e Caprichos">
+      <img src="img/logo.png" alt="Bichos e Caprichos" width="632" height="632">
+    </a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#inicio" aria-current="page">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#produtos">Loja</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn btn-pink btn-sm header-cta" href="https://wa.me/5531984997322?text=Oi%2C%20Bichos%20e%20Caprichos.%20Vi%20o%20site%20e%20quero%20agendar%20um%20horario." target="_blank" rel="noopener">Agendar no WhatsApp</a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" id="menuBtn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="conteudo">
+  <section class="hero" id="inicio">
+    <div class="hero-bg" aria-hidden="true">
+      <img src="img/hero.jpg" alt="Fachada da Bichos e Caprichos na Rua José Rodrigues Pereira, em Belo Horizonte" width="784" height="588">
+    </div>
+    <div class="wrap hero-content">
+      <p class="caption" style="color:rgba(255,255,255,.75)">Pet shop no Buritis</p>
+      <h1>Banho e tosa com capricho no Buritis</h1>
+      <p>A Bichos e Caprichos fica na Rua José Rodrigues Pereira, 1148, em Belo Horizonte. Banho e tosa, atendimento veterinário e loja de produtos para cães e gatos.</p>
+      <div class="hero-proof">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.2l1.9 3.9 4.3.6-3.1 3 0.7 4.3L8 11.2 4.2 13l0.7-4.3-3.1-3 4.3-.6z"/></svg>
+        <span>4,6 no Google · 56 avaliações</span>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-pink" href="https://wa.me/5531984997322?text=Oi%2C%20Bichos%20e%20Caprichos.%20Vi%20o%20site%20e%20quero%20agendar%20um%20horario." target="_blank" rel="noopener">Agendar no WhatsApp</a>
+        <a class="btn btn-ghost" href="#servicos">Ver serviços</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="overlap-wrap" id="servicos" aria-label="Serviços">
+    <div class="wrap">
+      <div class="cards-3">
+        <article class="svc-card reveal">
+          <div class="icon-line" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><path d="M8 20c2-4 5-6 8-6s6 2 8 6"/><circle cx="12" cy="12" r="2"/><circle cx="20" cy="12" r="2"/><path d="M10 24h12"/><path d="M16 8v4"/></svg>
+          </div>
+          <h3 class="title">Banho e tosa</h3>
+          <p class="body-sm">Higiene e tosa para o seu pet, com agendamento pelo WhatsApp da loja.</p>
+          <a class="btn btn-outline btn-sm" href="https://wa.me/5531984997322?text=Oi%2C%20Bichos%20e%20Caprichos.%20Vi%20o%20site%20e%20quero%20agendar%20banho%20e%20tosa." target="_blank" rel="noopener">Agendar banho</a>
+        </article>
+        <article class="svc-card reveal">
+          <div class="icon-line" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><circle cx="16" cy="14" r="6"/><path d="M10 26c1.5-3 3.8-4.5 6-4.5S20.5 23 22 26"/><path d="M22 10l4-2"/><path d="M24 14h4"/></svg>
+          </div>
+          <h3 class="title">Atendimento veterinário</h3>
+          <p class="body-sm">Atendimento veterinário na loja. Fale no WhatsApp para combinar o horário.</p>
+          <a class="btn btn-outline btn-sm" href="https://wa.me/5531984997322?text=Oi%2C%20Bichos%20e%20Caprichos.%20Vi%20o%20site%20e%20quero%20falar%20sobre%20atendimento%20veterinario." target="_blank" rel="noopener">Falar com a loja</a>
+        </article>
+        <article class="svc-card reveal">
+          <div class="icon-line" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><path d="M8 22V12l8-4 8 4v10l-8 4-8-4z"/><path d="M16 12v14"/><path d="M8 12l8 4 8-4"/></svg>
+          </div>
+          <h3 class="title">Loja de produtos</h3>
+          <p class="body-sm">Brinquedos, caminhas, acessórios e outros produtos para o dia a dia do seu pet.</p>
+          <a class="btn btn-outline btn-sm" href="https://wa.me/5531984997322?text=Oi%2C%20Bichos%20e%20Caprichos.%20Vi%20o%20site%20e%20quero%20saber%20sobre%20os%20produtos." target="_blank" rel="noopener">Falar sobre produtos</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="focus" id="cuidado">
+    <div class="wrap">
+      <div class="focus-head reveal">
+        <p class="caption">Na loja</p>
+        <h2 class="h3">O que você encontra na Bichos e Caprichos</h2>
+        <p class="body" style="max-width:520px">Serviços e produtos anunciados pela própria loja, reunidos em um só lugar no Buritis.</p>
+      </div>
+      <div class="focus-grid">
+        <article class="focus-item reveal">
+          <div class="icon-line" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><path d="M8 20c2-4 5-6 8-6s6 2 8 6"/><path d="M10 24h12"/></svg>
+          </div>
+          <h3 class="title">Banho e tosa</h3>
+          <p class="body-sm">Cuidado com a higiene e a aparência do seu cão ou gato.</p>
+        </article>
+        <article class="focus-item reveal">
+          <div class="icon-line" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="10"/><path d="M16 11v10"/><path d="M11 16h10"/></svg>
+          </div>
+          <h3 class="title">Veterinário</h3>
+          <p class="body-sm">Atendimento veterinário na loja, com horário combinado no WhatsApp.</p>
+        </article>
+        <article class="focus-item reveal">
+          <div class="icon-line" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><path d="M8 22V12l8-4 8 4v10l-8 4-8-4z"/><path d="M16 12v14"/><path d="M8 12l8 4 8-4"/></svg>
+          </div>
+          <h3 class="title">Produtos para o pet</h3>
+          <p class="body-sm">Loja com brinquedos, caminhas, acessórios e outros produtos.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tagline" id="tagline" aria-label="Promessa">
+    <div class="wrap">
+      <div class="tagline-inner">
+        <h2>
+          <span class="word">O</span>
+          <span class="word">seu</span>
+          <span class="word">melhor</span>
+          <span class="word">amigo</span>
+          <span class="word">sempre</span>
+          <span class="word">bem</span>
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps" id="como-funciona">
+    <div class="wrap">
+      <div class="steps-head reveal">
+        <p class="caption">Como funciona</p>
+        <h2 class="h3">Três passos para agendar</h2>
+        <p class="body" style="max-width:520px">Você combina tudo pelo WhatsApp, sem compromisso, e tira as dúvidas antes de ir.</p>
+      </div>
+      <div class="steps-grid">
+        <article class="step-card reveal">
+          <span class="step-num">1</span>
+          <h3 class="title">Chame no WhatsApp</h3>
+          <p class="body-sm">Diga o que o seu pet precisa: banho, tosa, veterinário ou produtos da loja.</p>
+        </article>
+        <article class="step-card reveal">
+          <span class="step-num">2</span>
+          <h3 class="title">Combine o horário</h3>
+          <p class="body-sm">A loja confirma o dia e o serviço de acordo com a agenda disponível.</p>
+        </article>
+        <article class="step-card reveal">
+          <span class="step-num">3</span>
+          <h3 class="title">Leve o pet até a loja</h3>
+          <p class="body-sm">Compareça na Rua José Rodrigues Pereira, 1148, no Buritis, em Belo Horizonte.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="produtos">
+    <div class="wrap">
+      <div class="gallery-head reveal">
+        <p class="caption">Loja e cuidados</p>
+        <h2>O que você encontra por aqui</h2>
+      </div>
+      <div class="cards-gallery">
+        <article class="g-card reveal">
+          <figure>
+            <img src="img/hero.jpg" alt="Fachada da Bichos e Caprichos na Rua José Rodrigues Pereira, 1148, no Buritis" width="784" height="588" loading="lazy">
+          </figure>
+          <div class="body-box">
+            <h3 class="title">A loja no Buritis</h3>
+            <p class="body-sm">A fachada da Bichos e Caprichos na Rua José Rodrigues Pereira, 1148, em Belo Horizonte.</p>
+            <a class="btn btn-outline btn-sm" href="https://www.google.com/maps?ftid=0xa697dd4525e395:0xd557b3923fed04e0" target="_blank" rel="noopener">Ver no mapa</a>
+          </div>
+        </article>
+        <article class="g-card reveal">
+          <figure>
+            <img src="img/loja.jpg" alt="Interior da Bichos e Caprichos, com brinquedos, caminhas e produtos nas prateleiras" width="784" height="588" loading="lazy">
+          </figure>
+          <div class="body-box">
+            <h3 class="title">Produtos e acessórios</h3>
+            <p class="body-sm">Brinquedos, caminhas e outros produtos para o seu pet, no interior da loja.</p>
+            <a class="btn btn-outline btn-sm" href="https://wa.me/5531984997322?text=Oi%2C%20Bichos%20e%20Caprichos.%20Vi%20o%20site%20e%20quero%20saber%20sobre%20os%20produtos." target="_blank" rel="noopener">Falar no WhatsApp</a>
+          </div>
+        </article>
+      </div>
+      <p class="caption" style="text-align:center;margin-top:24px">Fotos da loja publicadas no cadastro da Bichos e Caprichos no Meu Bairro Buritis</p>
+    </div>
+  </section>
+
+  <section class="faq" id="duvidas" aria-label="Perguntas frequentes">
+    <div class="wrap">
+      <div class="faq-head reveal">
+        <p class="caption">Dúvidas</p>
+        <h2 class="h3">Perguntas frequentes</h2>
+      </div>
+      <div class="faq-grid">
+        <article class="faq-item reveal">
+          <h3 class="title">Onde fica a Bichos e Caprichos?</h3>
+          <p class="body-sm">Na Rua José Rodrigues Pereira, 1148, no bairro Buritis, em Belo Horizonte, MG.</p>
+        </article>
+        <article class="faq-item reveal">
+          <h3 class="title">Como eu agendo um horário?</h3>
+          <p class="body-sm">Chame no WhatsApp e diga o serviço que o seu pet precisa. A loja confirma o horário com você.</p>
+        </article>
+        <article class="faq-item reveal">
+          <h3 class="title">Quais serviços a loja oferece?</h3>
+          <p class="body-sm">Banho e tosa, atendimento veterinário e loja com brinquedos, caminhas, acessórios e outros produtos para o pet.</p>
+        </article>
+        <article class="faq-item reveal">
+          <h3 class="title">Como falo com a loja?</h3>
+          <p class="body-sm">Pelo WhatsApp (31) 98499-7322, pelo telefone (31) 2512-0878 ou pelo Instagram @bichoscaprichosbh.</p>
+        </article>
+        <article class="faq-item reveal">
+          <h3 class="title">A loja tem Instagram?</h3>
+          <p class="body-sm">Sim. O perfil oficial é @bichoscaprichosbh, no Instagram.</p>
+        </article>
+        <article class="faq-item reveal">
+          <h3 class="title">Como eu chego?</h3>
+          <p class="body-sm">Use o mapa do Google para traçar a rota até a Rua José Rodrigues Pereira, 1148.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contato">
+    <div class="wrap">
+      <div class="contact-box reveal">
+        <div>
+          <p class="caption">Contato</p>
+          <h2 class="h4">Agende um horário com a Bichos e Caprichos</h2>
+          <p class="body">Rua José Rodrigues Pereira, 1148, Buritis, Belo Horizonte, MG. 4,6 no Google, com 56 avaliações.</p>
+          <div class="contact-meta">
+            <p class="body-sm"><a href="https://wa.me/5531984997322?text=Oi%2C%20Bichos%20e%20Caprichos.%20Vi%20o%20site%20e%20quero%20agendar%20um%20horario." target="_blank" rel="noopener">WhatsApp (31) 98499-7322</a></p>
+            <p class="body-sm"><a href="tel:+553125120878">(31) 2512-0878</a></p>
+            <p class="body-sm"><a href="https://www.instagram.com/bichoscaprichosbh/" target="_blank" rel="noopener">Instagram @bichoscaprichosbh</a></p>
+            <p class="body-sm"><a href="https://www.google.com/maps?ftid=0xa697dd4525e395:0xd557b3923fed04e0" target="_blank" rel="noopener">Ver no Google Maps</a></p>
+          </div>
+        </div>
+        <a class="btn btn-pink" href="https://wa.me/5531984997322?text=Oi%2C%20Bichos%20e%20Caprichos.%20Vi%20o%20site%20e%20quero%20agendar%20um%20horario." target="_blank" rel="noopener">Agendar no WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <a class="footer-brand" href="#inicio" aria-label="Bichos e Caprichos">
+      <img src="img/logo.png" alt="Bichos e Caprichos" width="632" height="632">
+    </a>
+    <p>Bichos e Caprichos · prévia de demonstração feita por Lucas Emmanuel<br>Fotos da loja publicadas no cadastro da Bichos e Caprichos no Meu Bairro Buritis · não é o site oficial da loja</p>
+    <a href="https://wa.me/5531995246186?text=Oi%20Lucas%21%20Vi%20a%20pr%C3%A9via%20do%20site%20que%20voc%C3%AA%20fez%20pra%20minha%20loja." target="_blank" rel="noopener">Fale com Lucas</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('menuBtn');
+  var nav=document.getElementById('nav');
+  if(btn&&nav){
+    btn.addEventListener('click',function(){
+      var open=nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open?'true':'false');
+      btn.setAttribute('aria-label', open?'Fechar menu':'Abrir menu');
+    });
+    nav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click',function(){
+        nav.classList.remove('open');
+        btn.setAttribute('aria-expanded','false');
+        btn.setAttribute('aria-label','Abrir menu');
+      });
+    });
+  }
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var reveals=document.querySelectorAll('.reveal');
+  if(reduce){
+    reveals.forEach(function(el){el.classList.add('in')});
+    var t=document.getElementById('tagline');
+    if(t) t.classList.add('is-in');
+  }else if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}
+      });
+    },{threshold:.15,rootMargin:'0px 0px -40px 0px'});
+    reveals.forEach(function(el){io.observe(el)});
+    var tag=document.getElementById('tagline');
+    if(tag){
+      var tio=new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if(e.isIntersecting){e.target.classList.add('is-in');tio.unobserve(e.target)}
+        });
+      },{threshold:.4});
+      tio.observe(tag);
+    }
+  }else{
+    reveals.forEach(function(el){el.classList.add('in')});
+  }
+})();
+</script>
+</body>
+</html>
